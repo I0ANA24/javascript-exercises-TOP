@@ -16,16 +16,16 @@ const sum = function(array) {
 };
 
 const multiply = function(array) {
-  return array.reduce((total, current) => total * current)
+  return array.reduce((total, current) => total * current, 1);
 };
 
 const power = function(x, y) {
 	return x ** y;
 };
 
-const factorial = function(x) {
+const factorial = n => {
 	let result = 1;
-  for(let i = 2; i <= x; i++)
+  for(let i = 2; i <= n; i++)
     result *= i;
   return result;
 };
